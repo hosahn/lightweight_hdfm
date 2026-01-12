@@ -1,0 +1,154 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "group": "com.example",
+      "name": "hdfm-test-app",
+      "version": "1.0.0",
+      "type": "application",
+      "bom-ref": "root-app"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "log4j-core",
+      "version": "2.14.1",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2021-44228",
+          "description": "Log4Shell - RCE Vulnerability",
+          "ratings": [
+            {
+              "source": { "name": "NVD" },
+              "score": 10.0,
+              "severity": "CRITICAL",
+              "method": "CVSSv31",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "spring-web",
+      "version": "5.3.15",
+      "purl": "pkg:maven/org.springframework/spring-web@5.3.15",
+      "bom-ref": "pkg:maven/org.springframework/spring-web@5.3.15",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2022-22965",
+          "description": "Spring4Shell - RCE via Data Binding",
+          "ratings": [
+            {
+              "source": { "name": "NVD" },
+              "score": 9.8,
+              "severity": "CRITICAL",
+              "method": "CVSSv31",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "PyYAML",
+      "version": "5.3",
+      "purl": "pkg:pypi/PyYAML@5.3",
+      "bom-ref": "pkg:pypi/PyYAML@5.3",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2020-14343",
+          "description": "Arbitrary code execution via full_load",
+          "ratings": [
+            {
+              "source": { "name": "NVD" },
+              "score": 9.8,
+              "severity": "CRITICAL",
+              "method": "CVSSv31",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "jackson-databind",
+      "version": "2.12.0",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.12.0",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.12.0",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2020-36518",
+          "description": "Denial of service via deeply nested JSON",
+          "ratings": [
+            {
+              "source": { "name": "NVD" },
+              "score": 7.5,
+              "severity": "HIGH",
+              "method": "CVSSv31",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "axios",
+      "version": "0.21.1",
+      "purl": "pkg:npm/axios@0.21.1",
+      "bom-ref": "pkg:npm/axios@0.21.1",
+      "vulnerabilities": [
+        {
+          "id": "CVE-2020-28168",
+          "description": "Server-Side Request Forgery (SSRF)",
+          "ratings": [
+            {
+              "source": { "name": "NVD" },
+              "score": 5.0,
+              "severity": "MEDIUM",
+              "method": "CVSSv31",
+              "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-web@5.3.15",
+        "pkg:npm/axios@0.21.1"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-web@5.3.15",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.12.0"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.12.0",
+      "dependsOn": [
+        "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/axios@0.21.1",
+      "dependsOn": [
+        "pkg:pypi/PyYAML@5.3"
+      ]
+    }
+  ]
+}

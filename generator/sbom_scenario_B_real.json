@@ -1,0 +1,116 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:030e57d9-f9f8-4cf8-8e3f-04ff12309262",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-07T14:00:02.765039Z",
+    "component": {
+      "type": "application",
+      "name": "Scenario-B-Real-World-App",
+      "version": "1.0.0",
+      "bom-ref": "root-app"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "mocha",
+      "version": "10.2.0",
+      "scope": "excluded",
+      "bom-ref": "pkg:pypi/mocha@10.2.0",
+      "purl": "pkg:pypi/mocha@10.2.0"
+    },
+    {
+      "type": "library",
+      "name": "vm2",
+      "version": "3.9.16",
+      "scope": "excluded",
+      "bom-ref": "pkg:npm/vm2@3.9.16",
+      "purl": "pkg:npm/vm2@3.9.16"
+    },
+    {
+      "type": "library",
+      "name": "requests",
+      "version": "2.29.0",
+      "scope": "required",
+      "bom-ref": "pkg:pypi/requests@2.29.0",
+      "purl": "pkg:pypi/requests@2.29.0"
+    },
+    {
+      "type": "library",
+      "name": "flask",
+      "version": "2.3.2",
+      "scope": "required",
+      "bom-ref": "pkg:pypi/flask@2.3.2",
+      "purl": "pkg:pypi/flask@2.3.2"
+    },
+    {
+      "type": "library",
+      "name": "werkzeug",
+      "version": "2.3.6",
+      "scope": "required",
+      "bom-ref": "pkg:pypi/werkzeug@2.3.6",
+      "purl": "pkg:pypi/werkzeug@2.3.6"
+    },
+    {
+      "type": "library",
+      "name": "gunicorn",
+      "version": "20.1.0",
+      "scope": "required",
+      "bom-ref": "pkg:pypi/gunicorn@20.1.0",
+      "purl": "pkg:pypi/gunicorn@20.1.0"
+    },
+    {
+      "type": "library",
+      "name": "sqlalchemy",
+      "version": "2.0.15",
+      "scope": "required",
+      "bom-ref": "pkg:pypi/sqlalchemy@2.0.15",
+      "purl": "pkg:pypi/sqlalchemy@2.0.15"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app",
+      "dependsOn": [
+        "pkg:pypi/mocha@10.2.0",
+        "pkg:pypi/requests@2.29.0",
+        "pkg:pypi/flask@2.3.2",
+        "pkg:pypi/werkzeug@2.3.6",
+        "pkg:pypi/gunicorn@20.1.0",
+        "pkg:pypi/sqlalchemy@2.0.15"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/mocha@10.2.0",
+      "dependsOn": [
+        "pkg:pypi/vm2@3.9.17"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/vm2@3.9.17",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/requests@2.29.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/flask@2.3.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/werkzeug@2.3.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/gunicorn@20.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/sqlalchemy@2.0.15",
+      "dependsOn": []
+    }
+  ]
+}

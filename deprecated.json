@@ -1,0 +1,20 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "components": [
+    {
+      "type": "library",
+      "name": "request",
+      "version": "2.88.2",
+      "purl": "pkg:npm/request@2.88.2",
+      "description": "Simplified HTTP request client.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    }
+  ]
+}

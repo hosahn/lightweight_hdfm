@@ -1,0 +1,601 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3b224f37-46db-4d89-9e3f-2c52b07b6750",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-07T13:48:14.754688Z",
+    "component": {
+      "type": "application",
+      "name": "Scenario-A-False-Alarm-App",
+      "version": "2.0.0",
+      "bom-ref": "root-app"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "auth-middleware",
+      "version": "1.0.0",
+      "bom-ref": "pkg:npm/auth-middleware@1.0.0",
+      "purl": "pkg:npm/auth-middleware@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "common-utils",
+      "version": "1.0.0",
+      "bom-ref": "pkg:npm/common-utils@1.0.0",
+      "purl": "pkg:npm/common-utils@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "legacy-core",
+      "version": "1.0.0",
+      "bom-ref": "pkg:npm/legacy-core@1.0.0",
+      "purl": "pkg:npm/legacy-core@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "xml-parser",
+      "version": "1.0.0",
+      "bom-ref": "pkg:npm/xml-parser@1.0.0",
+      "purl": "pkg:npm/xml-parser@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "react-lib-0",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/react-lib-0@1.2.3",
+      "purl": "pkg:npm/react-lib-0@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "react-dom-lib-1",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/react-dom-lib-1@1.2.3",
+      "purl": "pkg:npm/react-dom-lib-1@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "lodash-lib-2",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/lodash-lib-2@1.2.3",
+      "purl": "pkg:npm/lodash-lib-2@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "axios-lib-3",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/axios-lib-3@1.2.3",
+      "purl": "pkg:npm/axios-lib-3@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "moment-lib-4",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/moment-lib-4@1.2.3",
+      "purl": "pkg:npm/moment-lib-4@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "chalk-lib-5",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/chalk-lib-5@1.2.3",
+      "purl": "pkg:npm/chalk-lib-5@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "commander-lib-6",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/commander-lib-6@1.2.3",
+      "purl": "pkg:npm/commander-lib-6@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "debug-lib-7",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/debug-lib-7@1.2.3",
+      "purl": "pkg:npm/debug-lib-7@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "express-lib-8",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/express-lib-8@1.2.3",
+      "purl": "pkg:npm/express-lib-8@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "tslib-lib-9",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/tslib-lib-9@1.2.3",
+      "purl": "pkg:npm/tslib-lib-9@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "zone.js-lib-10",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/zone.js-lib-10@1.2.3",
+      "purl": "pkg:npm/zone.js-lib-10@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "rxjs-lib-11",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/rxjs-lib-11@1.2.3",
+      "purl": "pkg:npm/rxjs-lib-11@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "inquirer-lib-12",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/inquirer-lib-12@1.2.3",
+      "purl": "pkg:npm/inquirer-lib-12@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "minimist-lib-13",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/minimist-lib-13@1.2.3",
+      "purl": "pkg:npm/minimist-lib-13@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "react-lib-14",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/react-lib-14@1.2.3",
+      "purl": "pkg:npm/react-lib-14@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "react-dom-lib-15",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/react-dom-lib-15@1.2.3",
+      "purl": "pkg:npm/react-dom-lib-15@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "lodash-lib-16",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/lodash-lib-16@1.2.3",
+      "purl": "pkg:npm/lodash-lib-16@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "axios-lib-17",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/axios-lib-17@1.2.3",
+      "purl": "pkg:npm/axios-lib-17@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "moment-lib-18",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/moment-lib-18@1.2.3",
+      "purl": "pkg:npm/moment-lib-18@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "chalk-lib-19",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/chalk-lib-19@1.2.3",
+      "purl": "pkg:npm/chalk-lib-19@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "commander-lib-20",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/commander-lib-20@1.2.3",
+      "purl": "pkg:npm/commander-lib-20@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "debug-lib-21",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/debug-lib-21@1.2.3",
+      "purl": "pkg:npm/debug-lib-21@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "express-lib-22",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/express-lib-22@1.2.3",
+      "purl": "pkg:npm/express-lib-22@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "tslib-lib-23",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/tslib-lib-23@1.2.3",
+      "purl": "pkg:npm/tslib-lib-23@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "zone.js-lib-24",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/zone.js-lib-24@1.2.3",
+      "purl": "pkg:npm/zone.js-lib-24@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "rxjs-lib-25",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/rxjs-lib-25@1.2.3",
+      "purl": "pkg:npm/rxjs-lib-25@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "inquirer-lib-26",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/inquirer-lib-26@1.2.3",
+      "purl": "pkg:npm/inquirer-lib-26@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "minimist-lib-27",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/minimist-lib-27@1.2.3",
+      "purl": "pkg:npm/minimist-lib-27@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "react-lib-28",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/react-lib-28@1.2.3",
+      "purl": "pkg:npm/react-lib-28@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "react-dom-lib-29",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/react-dom-lib-29@1.2.3",
+      "purl": "pkg:npm/react-dom-lib-29@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "lodash-lib-30",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/lodash-lib-30@1.2.3",
+      "purl": "pkg:npm/lodash-lib-30@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "axios-lib-31",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/axios-lib-31@1.2.3",
+      "purl": "pkg:npm/axios-lib-31@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "moment-lib-32",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/moment-lib-32@1.2.3",
+      "purl": "pkg:npm/moment-lib-32@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "chalk-lib-33",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/chalk-lib-33@1.2.3",
+      "purl": "pkg:npm/chalk-lib-33@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "commander-lib-34",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/commander-lib-34@1.2.3",
+      "purl": "pkg:npm/commander-lib-34@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "debug-lib-35",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/debug-lib-35@1.2.3",
+      "purl": "pkg:npm/debug-lib-35@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "express-lib-36",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/express-lib-36@1.2.3",
+      "purl": "pkg:npm/express-lib-36@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "tslib-lib-37",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/tslib-lib-37@1.2.3",
+      "purl": "pkg:npm/tslib-lib-37@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "zone.js-lib-38",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/zone.js-lib-38@1.2.3",
+      "purl": "pkg:npm/zone.js-lib-38@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "rxjs-lib-39",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/rxjs-lib-39@1.2.3",
+      "purl": "pkg:npm/rxjs-lib-39@1.2.3"
+    },
+    {
+      "type": "library",
+      "name": "inquirer-lib-40",
+      "version": "1.2.3",
+      "bom-ref": "pkg:npm/inquirer-lib-40@1.2.3",
+      "purl": "pkg:npm/inquirer-lib-40@1.2.3"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app",
+      "dependsOn": [
+        "pkg:npm/auth-middleware@1.0.0",
+        "pkg:npm/react-dom-lib-1@1.2.3",
+        "pkg:npm/lodash-lib-2@1.2.3",
+        "pkg:npm/moment-lib-4@1.2.3",
+        "pkg:npm/chalk-lib-5@1.2.3",
+        "pkg:npm/debug-lib-7@1.2.3",
+        "pkg:npm/express-lib-8@1.2.3",
+        "pkg:npm/zone.js-lib-10@1.2.3",
+        "pkg:npm/rxjs-lib-11@1.2.3",
+        "pkg:npm/minimist-lib-13@1.2.3",
+        "pkg:npm/react-lib-14@1.2.3",
+        "pkg:npm/lodash-lib-16@1.2.3",
+        "pkg:npm/axios-lib-17@1.2.3",
+        "pkg:npm/chalk-lib-19@1.2.3",
+        "pkg:npm/commander-lib-20@1.2.3",
+        "pkg:npm/express-lib-22@1.2.3",
+        "pkg:npm/tslib-lib-23@1.2.3",
+        "pkg:npm/rxjs-lib-25@1.2.3",
+        "pkg:npm/inquirer-lib-26@1.2.3",
+        "pkg:npm/react-lib-28@1.2.3",
+        "pkg:npm/react-dom-lib-29@1.2.3",
+        "pkg:npm/axios-lib-31@1.2.3",
+        "pkg:npm/moment-lib-32@1.2.3",
+        "pkg:npm/commander-lib-34@1.2.3",
+        "pkg:npm/debug-lib-35@1.2.3",
+        "pkg:npm/tslib-lib-37@1.2.3",
+        "pkg:npm/zone.js-lib-38@1.2.3",
+        "pkg:npm/inquirer-lib-40@1.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:npm/auth-middleware@1.0.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0",
+        "pkg:npm/react-lib-0@1.2.3",
+        "pkg:npm/axios-lib-3@1.2.3",
+        "pkg:npm/commander-lib-6@1.2.3",
+        "pkg:npm/tslib-lib-9@1.2.3",
+        "pkg:npm/inquirer-lib-12@1.2.3",
+        "pkg:npm/react-dom-lib-15@1.2.3",
+        "pkg:npm/moment-lib-18@1.2.3",
+        "pkg:npm/debug-lib-21@1.2.3",
+        "pkg:npm/zone.js-lib-24@1.2.3",
+        "pkg:npm/minimist-lib-27@1.2.3",
+        "pkg:npm/lodash-lib-30@1.2.3",
+        "pkg:npm/chalk-lib-33@1.2.3",
+        "pkg:npm/express-lib-36@1.2.3",
+        "pkg:npm/rxjs-lib-39@1.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:npm/common-utils@1.0.0",
+      "dependsOn": [
+        "pkg:npm/legacy-core@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/legacy-core@1.0.0",
+      "dependsOn": [
+        "pkg:npm/xml-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/xml-parser@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/react-lib-0@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/react-dom-lib-1@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/lodash-lib-2@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/axios-lib-3@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/moment-lib-4@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/chalk-lib-5@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/commander-lib-6@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/debug-lib-7@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/express-lib-8@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/tslib-lib-9@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/zone.js-lib-10@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/rxjs-lib-11@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/inquirer-lib-12@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/minimist-lib-13@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/react-lib-14@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/react-dom-lib-15@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/lodash-lib-16@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/axios-lib-17@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/moment-lib-18@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/chalk-lib-19@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/commander-lib-20@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/debug-lib-21@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/express-lib-22@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/tslib-lib-23@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/zone.js-lib-24@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/rxjs-lib-25@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/inquirer-lib-26@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/minimist-lib-27@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/react-lib-28@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/react-dom-lib-29@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/lodash-lib-30@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/axios-lib-31@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/moment-lib-32@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/chalk-lib-33@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/commander-lib-34@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/debug-lib-35@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/express-lib-36@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/tslib-lib-37@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/zone.js-lib-38@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/rxjs-lib-39@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/inquirer-lib-40@1.2.3",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-FALSE-ALARM-999",
+      "source": {
+        "name": "NVD"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "NVD"
+          },
+          "score": 9.8,
+          "severity": "CRITICAL",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/xml-parser@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss_score",
+          "value": "0.001"
+        },
+        {
+          "name": "cisa_kev",
+          "value": "false"
+        }
+      ]
+    }
+  ]
+}
