@@ -12,7 +12,6 @@ from infrastructure.graph.models import SBOMModel, AnalysisModel, VulnerabilityM
 
 
 class SQLAlchemyRepository(IRepository):
-    """Adapter: SQLAlchemy-based persistence (SQLAlchemy 2.x compatible)"""
     
     def __init__(self, session: Session):
         self.session = session
@@ -38,7 +37,6 @@ class SQLAlchemyRepository(IRepository):
     
     def get_sbom(self, sbom_id: str) -> Optional[Dict]:
         """Retrieve SBOM from database"""
-        # SQLAlchemy 2.x style
         stmt = select(SBOMModel).where(SBOMModel.id == sbom_id)
         sbom = self.session.execute(stmt).scalar_one_or_none()
         
@@ -57,7 +55,6 @@ class SQLAlchemyRepository(IRepository):
     
     def list_sboms(self, limit: int = 10) -> List[Dict]:
         """List recent SBOMs"""
-        # SQLAlchemy 2.x style
         stmt = select(SBOMModel).order_by(desc(SBOMModel.created_at)).limit(limit)
         sboms = self.session.execute(stmt).scalars().all()
         
@@ -70,7 +67,6 @@ class SQLAlchemyRepository(IRepository):
         } for s in sboms]
     
     def save_analysis(self, sbom_id: str, result: AnalysisResult) -> None:
-        """Save analysis result to database"""
         analysis = AnalysisModel(
             sbom_id=sbom_id,
             timestamp=result.timestamp,
@@ -83,9 +79,8 @@ class SQLAlchemyRepository(IRepository):
         )
         
         self.session.add(analysis)
-        self.session.flush()  # Get analysis.id
-        
-        # Save vulnerabilities
+        self.session.flush()
+
         for vuln in result.vulnerabilities:
             vuln_model = VulnerabilityModel(
                 analysis_id=analysis.id,
@@ -110,7 +105,6 @@ class SQLAlchemyRepository(IRepository):
     
     def get_latest_analysis(self, sbom_id: str) -> Optional[AnalysisResult]:
         """Get most recent analysis for SBOM"""
-        # SQLAlchemy 2.x style
         stmt = (
             select(AnalysisModel)
             .where(AnalysisModel.sbom_id == sbom_id)
@@ -126,7 +120,6 @@ class SQLAlchemyRepository(IRepository):
     
     def get_all_analyses(self, sbom_id: str) -> List[AnalysisResult]:
         """Get all analyses for SBOM (for trend analysis)"""
-        # SQLAlchemy 2.x style
         stmt = (
             select(AnalysisModel)
             .where(AnalysisModel.sbom_id == sbom_id)

@@ -13,7 +13,6 @@ class Priority(Enum):
 
 @dataclass
 class Component:
-    """Domain entity representing a software component"""
     bom_ref: str
     name: str
     version: str
@@ -21,14 +20,13 @@ class Component:
     vulnerabilities: List['Vulnerability'] = field(default_factory=list)
     published_at: Optional[datetime] = None
     is_deprecated: bool = False
-    maintenance_risk_score: float = 0.0  # 0.0 (New) to 1.0 (Obsolete)
+    maintenance_risk_score: float = 0.0  # 0.0  to 1.0
     def __hash__(self):
         return hash(self.bom_ref)
 
 
 @dataclass
 class Vulnerability:
-    """Domain entity representing a vulnerability"""
     id: str
     component_ref: str
     component_name: str
@@ -49,12 +47,8 @@ class Vulnerability:
     
     def __hash__(self):
         return hash(self.id)
+
     def __post_init__(self):
-        """
-        Force conversion of numeric fields to floats/bools 
-        to handle data coming in as strings (e.g. from JSON/CSV).
-        """
-        # Convert floats
         float_fields = [
             'cvss_score', 'severity', 'tcs', 'vei', 
             'epss', 'exploitability', 'hdfm_score'
@@ -67,16 +61,13 @@ class Vulnerability:
                     # Convert to float
                     setattr(self, field_name, float(value))
                 except ValueError:
-                    # Handle empty strings or bad data by defaulting to 0.0
                     setattr(self, field_name, 0.0)
 
-        # Convert bools (special handling usually required for strings like "false")
         if isinstance(self.kev, str):
             self.kev = self.kev.lower() in ('true', '1', 't', 'yes')
 
 @dataclass
 class AnalysisResult:
-    """Aggregate root for analysis results"""
     sbom_id: str
     timestamp: datetime
     total_components: int
