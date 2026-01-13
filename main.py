@@ -14,7 +14,6 @@ from infrastructure.graph.repositories import SQLAlchemyRepository
 from infrastructure.persistence.database import create_database_engine, create_session
 from infrastructure.clients.registry_client import DepsDevClient
 
-# Dependency Injection Setup
 @contextmanager
 def get_repository():
     """Context manager for repository with session"""
