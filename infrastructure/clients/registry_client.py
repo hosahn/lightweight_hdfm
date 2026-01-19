@@ -39,8 +39,7 @@ class DepsDevClient(IMetadataProvider):
                 
                 if response.status_code == 200:
                     data = response.json()
-                    
-                    # ✅ PARSING LOGIC
+
                     # 1. Published Date
                     published_str = data.get('publishedAt')
                     published_at = None
@@ -65,7 +64,7 @@ class DepsDevClient(IMetadataProvider):
                 
         return results
 
-    def _parse_purl(self, purl: str) -> tuple[Optional[str], Optional[str], Optional[str]]:
+    def _parse_purl(self, purl: str) :
         """
         Extract system, name, version from PURL.
         Example: pkg:npm/axios@0.21.1 -> ('npm', 'axios', '0.21.1')
