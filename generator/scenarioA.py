@@ -44,53 +44,40 @@ def generate_scenario_A_real():
     root_ref = "root-app"
     deps_map = {root_ref: []}
 
-    # --- 1. THE "REAL" FALSE ALARM CHAIN ---
-    # We bury a real, critical vulnerability deep in the graph.
-    # Chain: Root -> internal-analytics -> report-generator -> Django 3.2.0
-    
-    # Layer 1: Internal Tool (Safe)
     c1 = create_component(None, "internal-analytics", "1.0.0")
     sbom['components'].append(c1)
     deps_map[root_ref].append(c1['bom-ref'])
-    
-    # Layer 2: Utility (Safe)
+
     c2 = create_component(None, "report-generator", "2.5.0")
     sbom['components'].append(c2)
     deps_map[c1['bom-ref']] = [c2['bom-ref']]
     
-    # Layer 3: THE VULNERABLE LIB (Django 3.2.0)
-    # OSV will find CVE-2022-28346 (CVSS 10.0) here.
     c3 = create_component("Django", "django", "3.2.0")
     sbom['components'].append(c3)
     deps_map[c2['bom-ref']] = [c3['bom-ref']]
     deps_map[c3['bom-ref']] = [] # Leaf node
 
-    # --- 2. THE NOISE (Real, Healthy Components) ---
-    # These distractors ensure the algorithm isn't just flagging everything.
-    # We use common, modern versions that OSV will likely mark as clean.
     
     safe_libs = [
-        ("express", "4.18.2"), # Clean
-        ("lodash", "4.17.21"), # Clean
-        ("axios", "1.6.0"),    # Clean
-        ("chalk", "4.1.2"),    # Clean
-        ("debug", "4.3.4"),    # Clean
-        ("commander", "9.4.1"),# Clean
-        ("uuid", "9.0.0"),     # Clean
-        ("rxjs", "7.8.0"),     # Clean
-        ("tslib", "2.5.0"),    # Clean
-        ("zone.js", "0.13.0")  # Clean
+        ("express", "4.18.2"), 
+        ("lodash", "4.17.21"), 
+        ("axios", "1.6.0"),    
+        ("chalk", "4.1.2"),    
+        ("debug", "4.3.4"),    
+        ("commander", "9.4.1"),
+        ("uuid", "9.0.0"),     
+        ("rxjs", "7.8.0"),     
+        ("tslib", "2.5.0"),    
+        ("zone.js", "0.13.0")  
     ]
 
     for name, version in safe_libs:
         comp = create_component(None, name, version)
         sbom['components'].append(comp)
-        
-        # Connect directly to root (High Visibility, Low Risk)
+
         deps_map[root_ref].append(comp['bom-ref'])
         deps_map[comp['bom-ref']] = []
 
-    # --- BUILD DEPENDENCIES BLOCK ---
     for parent, children in deps_map.items():
         sbom['dependencies'].append({"ref": parent, "dependsOn": children})
 

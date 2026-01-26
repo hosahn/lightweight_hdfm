@@ -5,10 +5,6 @@ from core.entities import Component, Vulnerability
 from core.interface import IVulnerabilityLookup
 
 class OSVVulnerabilityLookup(IVulnerabilityLookup):
-    """
-    Adapter: OSV.dev API for PURL-based vulnerability lookup
-    Uses batch query API for efficient scanning, then hydrates details for full context.
-    """
     
     def __init__(self, base_url: str = "https://api.osv.dev/v1"):
         self.base_url = base_url
@@ -16,7 +12,7 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
         self.logger = logging.getLogger(__name__)
     
     def lookup_vulnerability(self, vuln_id: str) -> Optional[Dict]:
-        """Lookup single vulnerability from OSV.dev by ID (returns FULL details)"""
+        """Lookup with OSV.dev by ID (returns FULL details)"""
         if vuln_id in self.cache:
             return self.cache[vuln_id]
         
@@ -52,7 +48,7 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
         Step 2: If details (aliases) are missing, fetch full record individually
         Step 3: Deduplicate and prioritize CVEs
         """
-        # --- 1. Build Query ---
+        # Build Query ---
         queries = []
         component_map = {}
         
@@ -66,7 +62,7 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
         if not queries:
             return {}
         
-        # --- 2. Process in Chunks ---
+        # Process in Chunks ---
         chunk_size = 1000
         all_results = {}
         
@@ -94,14 +90,11 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
                     raw_vulns = result.get('vulns', [])
                     hydrated_vulns = []
                     
-                    # --- 3. Hydrate Data (The Fix) ---
+                    # Hydrate Data (The Fix) ---
                     for v in raw_vulns:
                         v_id = v.get('id', '')
                         
-                        # Check if we are missing critical data (aliases)
-                        # The batch API often returns a 'slim' object without aliases
                         if not v.get('aliases'):
-                            # Fetch full details
                             full_record = self.lookup_vulnerability(v_id)
                             if full_record:
                                 hydrated_vulns.append(full_record)
@@ -111,7 +104,7 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
                             hydrated_vulns.append(v)
                     
                     if hydrated_vulns:
-                        # --- 4. Deduplicate & Convert ---
+                        # Deduplicate & Convert ---
                         comp_vulns = self._deduplicate_vulnerabilities(hydrated_vulns, comp)
                         if comp_vulns:
                             all_results[comp.bom_ref] = comp_vulns
@@ -203,7 +196,6 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
         vuln_id = osv_data.get('id', 'UNKNOWN')
         aliases = osv_data.get('aliases', [])
         
-        # ✅ SWAP: If a CVE exists in aliases, use it as the main ID
         cve_id = next((a for a in aliases if a.startswith('CVE-')), None)
         if cve_id:
             vuln_id = cve_id
@@ -258,7 +250,6 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
 
     def _extract_vulnerability_data(self, vuln: Dict) -> Dict:
         """Legacy helper"""
-        # Return full object for maximum compatibility
         return {
             'cvss_score': 0.0,
             'summary': vuln.get('summary', ''),

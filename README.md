@@ -1,7 +1,7 @@
 #SBOM Analyzer
 
 
-(Disclaminer: ONLY comments in this project are written by a LLM model to increase the readability of the project)
+(Disclaminer: ONLY function descriptions in this project are written by a LLM model to increase the readability of the project)
 
 > **Hybrid Decision Model for Software Supply Chain Security**
 > *Built with Hexagonal Architecture (Ports & Adapters)*

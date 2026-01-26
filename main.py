@@ -14,7 +14,6 @@ from infrastructure.graph.repositories import SQLAlchemyRepository
 from infrastructure.persistence.database import create_database_engine, create_session
 from infrastructure.clients.registry_client import DepsDevClient
 
-# Dependency Injection Setup
 @contextmanager
 def get_repository():
     """Context manager for repository with session"""
@@ -470,8 +469,8 @@ def create_app() -> FastAPI:
 if __name__ == "__main__":
     import uvicorn
     app = create_app()
-    print("🚀 Starting HDFM v4.0 SBOM Analyzer...")
-    print("📊 SQLite database: hdfm_sbom.db")
-    print("🔍 OSV.dev integration enabled")
-    print("🌐 Open http://localhost:8000")
+    print("1. Starting HDFM v4.0 SBOM Analyzer...")
+    print("2. SQLite database: hdfm_sbom.db")
+    print("3. OSV.dev integration enabled")
+    print("4. Open http://localhost:8000")
     uvicorn.run(app, host="0.0.0.0", port=8000)

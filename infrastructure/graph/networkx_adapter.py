@@ -15,12 +15,10 @@ class NetworkXGraphAnalyzer(IGraphAnalyzer):
         in_degree = defaultdict(int)
                 
         for dep in dependencies:
-            # We only need to count who is being depended on
             depends_on = dep.get('dependsOn', [])
             for target in depends_on:
                 in_degree[target] += 1
-        
-        # Avoid division by zero for empty graphs
+
         max_in_degree = max(in_degree.values()) if in_degree else 1
         
         tcs_scores = {}
@@ -32,7 +30,6 @@ class NetworkXGraphAnalyzer(IGraphAnalyzer):
             normalized_degree = degree_count / max_in_degree
             
             # --- Factor 2: Scope Priority (S) ---
-            # [MODIFIED] We now check the explicit scope field instead of guessing depth.
             # 'required' = Direct (1.0)
             # 'optional' = Transitive (0.5)
             # None/Missing = Uncertainty Penalty (0.6)
@@ -44,7 +41,6 @@ class NetworkXGraphAnalyzer(IGraphAnalyzer):
             elif scope_val == 'optional':
                 scope_priority = 0.5
             else:
-                # The fallback for "Undefined/Missing"
                 scope_priority = 0.6
             
             # Final Average
@@ -53,7 +49,7 @@ class NetworkXGraphAnalyzer(IGraphAnalyzer):
         return tcs_scores
     
     def calculate_max_depth(self, dependencies: List[Dict]) -> int:
-        """Calculate maximum depth using BFS"""
+        """Max depth calculation using BFS"""
         G = nx.DiGraph()
         
         for dep in dependencies:

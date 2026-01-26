@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Integer, Float, Boolean, Text, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
-from infrastructure.persistence.database import Base  # ← 이게 핵심!
+from infrastructure.persistence.database import Base  
 
 # 또는 database.py가 없다면:
 # from sqlalchemy.orm import declarative_base

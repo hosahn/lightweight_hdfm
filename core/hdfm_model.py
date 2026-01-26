@@ -6,17 +6,14 @@ from core.entities import Priority, Vulnerability
 
 
 class HDFMModel:
-    """Hybrid Decision-Fusion Model v4.0"""
-    
     @staticmethod
     def calculate_vei(cvss_vector: str) -> float:
-        """Calculate Vector-based Exposure Index"""
         if not cvss_vector:
             return 0.5
         
         vector_map = {
-        'AV:N': 0.85,  # Reduced from 1.0 to give other metrics breathing room
-        'AV:A': 0.6,   # Reduced
+        'AV:N': 0.85,
+        'AV:A': 0.6, 
         'AV:L': 0.3,
         'AV:P': 0.1,
         }
@@ -29,13 +26,13 @@ class HDFMModel:
     
     @staticmethod
     def calculate_exploitability_fusion(epss: float, kev: bool) -> float:
-        """Exploitability Fusion: E = 1 - (1 - P_EPSS)(1 - P_KEV)"""
+        """E = 1 - (1 - P_EPSS)(1 - P_KEV)"""
         p_kev = 1.0 if kev else 0.0
         return 1 - (1 - epss) * (1 - p_kev)
     
     @staticmethod
     def calculate_entropy_weights(metrics_df: pd.DataFrame) -> Dict[str, float]:
-        """Shannon Entropy-based Dynamic Weighting"""
+        """Shannon Entropy"""
         m = len(metrics_df)
         
         if m <= 1:
@@ -65,7 +62,6 @@ class HDFMModel:
     
     @staticmethod
     def calculate_epss_median(vulnerabilities: List[Vulnerability]) -> float:
-        """Phase 2: Calculate Dynamic Baseline (eta)"""
         epss_scores = [v.epss for v in vulnerabilities]
         if not epss_scores:
             return 0.0
@@ -73,30 +69,24 @@ class HDFMModel:
 
     @staticmethod
     def calculate_hdfm_score(vuln: Vulnerability, weights: Dict[str, float], eta: float) -> float:
-        """
-        Phase 3: Contextual Branching & Scoring
-        Implements mutually exclusive decision tree from Algorithm 1
-        """
-        # 1. Base Weighted Score (Dot Product)
+        # 1. Base Weighted Score
         base_score = (
             vuln.exploitability * weights.get('exploitability', 0.3) +
-            vuln.severity * weights.get('severity', 0.3) +  # Represents Impact (I)
-            vuln.vei * weights.get('vei', 0.1) +            # Represents Exposure (X)
-            vuln.tcs * weights.get('tcs', 0.3)              # Represents Criticality (C)
+            vuln.severity * weights.get('severity', 0.3) +  
+            vuln.vei * weights.get('vei', 0.1) +            
+            vuln.tcs * weights.get('tcs', 0.3)             
         )
 
         # 2. Contextual Branching (Mutually Exclusive)
-        # Branch A: Active Threat or Structural Criticality
         print(vuln.component_name, base_score)
         if (vuln.cvss_score >= 9.8 and (vuln.tcs >= 0.7 and vuln.exploitability >= 0.5)):
             final_score = base_score * 1.5
+            
         # Branch A+: CVSS Critical & High Network Exposure
-        # FIX: Changed (vei == 1.0) to (vei >= 0.85) to catch 'Network' vectors that aren't perfectly 1.0
         elif (vuln.cvss_score >= 9.0) and (vuln.vei >= 0.85) and vuln.tcs >= 0.5:
             final_score = base_score * 1.2
 
         # Branch B: Significant Exposure
-        # FIX: Lowered threshold slightly to be inclusive of standard network vectors
         elif vuln.vei >= 0.8 and vuln.tcs >= 0.4:
             final_score = base_score * 1.0
 
