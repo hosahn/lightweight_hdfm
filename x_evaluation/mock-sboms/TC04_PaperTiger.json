@@ -1,0 +1,169 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:9e62dd6d-1e1a-41d9-a27a-54235662164e",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-28T09:16:50.118809Z",
+    "component": {
+      "type": "application",
+      "name": "Hardware-Interface-App-Scenario-D",
+      "version": "1.0.0",
+      "bom-ref": "root-app@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "name": "root-app",
+      "bom-ref": "root-app@1.0.0",
+      "type": "application"
+    },
+    {
+      "name": "hardware-interface",
+      "bom-ref": "pkg:npm/hardware-interface@2.0.0",
+      "type": "library"
+    },
+    {
+      "name": "usb-driver",
+      "bom-ref": "pkg:npm/usb-driver@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-0",
+      "bom-ref": "pkg:npm/safe-lib-0@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-1",
+      "bom-ref": "pkg:npm/safe-lib-1@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-2",
+      "bom-ref": "pkg:npm/safe-lib-2@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-3",
+      "bom-ref": "pkg:npm/safe-lib-3@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-4",
+      "bom-ref": "pkg:npm/safe-lib-4@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-5",
+      "bom-ref": "pkg:npm/safe-lib-5@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-6",
+      "bom-ref": "pkg:npm/safe-lib-6@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "safe-lib-7",
+      "bom-ref": "pkg:npm/safe-lib-7@1.0.0",
+      "type": "library"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@1.0.0",
+      "dependsOn": [
+        "pkg:npm/hardware-interface@2.0.0",
+        "pkg:npm/safe-lib-0@1.0.0",
+        "pkg:npm/safe-lib-1@1.0.0",
+        "pkg:npm/safe-lib-2@1.0.0",
+        "pkg:npm/safe-lib-3@1.0.0",
+        "pkg:npm/safe-lib-4@1.0.0",
+        "pkg:npm/safe-lib-5@1.0.0",
+        "pkg:npm/safe-lib-6@1.0.0",
+        "pkg:npm/safe-lib-7@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/hardware-interface@2.0.0",
+      "dependsOn": [
+        "pkg:npm/usb-driver@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/usb-driver@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-0@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-1@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-2@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-3@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-4@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-5@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-6@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/safe-lib-7@1.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2023-PAPER-TIGER",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "NVD"
+          },
+          "score": 7.6,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "description": "Paper Tiger - High Impact but requires Physical Access",
+      "affects": [
+        {
+          "ref": "pkg:npm/usb-driver@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    }
+  ]
+}

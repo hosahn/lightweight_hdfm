@@ -1,0 +1,2 @@
+Component,VulnID,CVSS_Base,EPSS_Prob,Classic_Score,Priority
+core-parser,CVE-2023-LATENT,4.1,0.0010,0.205,Low

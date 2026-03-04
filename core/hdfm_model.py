@@ -36,7 +36,7 @@ class HDFMModel:
         m = len(metrics_df)
         
         if m <= 1:
-            return {'severity': 0.25, 'tcs': 0.25, 'vei': 0.25, 'exploitability': 0.25}
+            return {'severity': 0.3, 'tcs': 0.3, 'vei': 0.1, 'exploitability': 0.3}
         
         k = 1.0 / np.log(m)
         weights = {}
@@ -56,7 +56,7 @@ class HDFMModel:
         total = sum(weights.values())
         
         if total == 0:
-            return {'severity': 0.25, 'tcs': 0.25, 'vei': 0.25, 'exploitability': 0.25}
+            return {'severity': 0.3, 'tcs': 0.3, 'vei': 0.1, 'exploitability': 0.3}
         
         return {k: v / total for k, v in weights.items()}
     
@@ -69,7 +69,6 @@ class HDFMModel:
 
     @staticmethod
     def calculate_hdfm_score(vuln: Vulnerability, weights: Dict[str, float], eta: float) -> float:
-        # 1. Base Weighted Score
         base_score = (
             vuln.exploitability * weights.get('exploitability', 0.3) +
             vuln.severity * weights.get('severity', 0.3) +  
@@ -78,7 +77,6 @@ class HDFMModel:
         )
 
         # 2. Contextual Branching (Mutually Exclusive)
-        print(vuln.component_name, base_score)
         if (vuln.cvss_score >= 9.8 and (vuln.tcs >= 0.7 and vuln.exploitability >= 0.5)):
             final_score = base_score * 1.5
             

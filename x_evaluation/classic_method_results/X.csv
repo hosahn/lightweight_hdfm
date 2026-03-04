@@ -1,0 +1,3 @@
+Component,VulnID,CVSS_Base,EPSS_Prob,Classic_Score,Priority
+direct-lib,CVE-DIRECT,7.5,0.1000,0.425,Medium
+transitive-lib,CVE-TRANSITIVE,7.5,0.1000,0.425,Medium

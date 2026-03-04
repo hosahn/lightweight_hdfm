@@ -27,33 +27,33 @@ class IngestionService:
             
             if not bom_ref:
                 continue
-            
             component = Component(
                 bom_ref=bom_ref,
                 name=comp_data.get('name', 'Unknown'),
                 version=comp_data.get('version', 'Unknown'),
-                purl=comp_data.get('purl')  # This is critical for OSV lookup!
+                purl=comp_data.get('purl'),  # This is critical for OSV lookup!
+                scope=comp_data.get('scope')
             )
             
             # Check if SBOM already has vulnerabilities (VEX data)
-            for vuln_data in comp_data.get('vulnerabilities', []):
+            for vuln_data in sbom_data.get('vulnerabilities', []):
                 cve_id = vuln_data.get('id', 'UNKNOWN')
                 ratings = vuln_data.get('ratings', [])
                 cvss_score = ratings[0].get('score', 0) if ratings else 0
                 cvss_vector = ratings[0].get('vector', '') if ratings else ''
+                if {"ref":bom_ref} in vuln_data.get('affects', []) : 
+                    vulnerability = Vulnerability(
+                        id=cve_id,
+                        component_ref=bom_ref,
+                        component_name=component.name,
+                        cvss_score=cvss_score,
+                        cvss_vector=cvss_vector,
+                        description=vuln_data.get('description', 'No description'),
+                        severity=cvss_score / 10.0
+                    )
+                    
+                    component.vulnerabilities.append(vulnerability)
                 
-                vulnerability = Vulnerability(
-                    id=cve_id,
-                    component_ref=bom_ref,
-                    component_name=component.name,
-                    cvss_score=cvss_score,
-                    cvss_vector=cvss_vector,
-                    description=vuln_data.get('description', 'No description'),
-                    severity=cvss_score / 10.0
-                )
-                
-                component.vulnerabilities.append(vulnerability)
-            
             components.append(component)
         
         # Step 2: Batch scan ALL components for vulnerabilities using PURL

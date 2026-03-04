@@ -1,0 +1,5 @@
+Component,VulnID,CVSS_Base,EPSS_Prob,Classic_Score,Priority
+django,CVE-2022-34265,10.0,0.9273,0.964,Critical
+express,CVE-2024-43796,8.7,0.0009,0.435,Medium
+axios,CVE-2025-58754,8.6,0.0011,0.431,Medium
+lodash,CVE-2025-13465,8.0,0.0004,0.400,Medium

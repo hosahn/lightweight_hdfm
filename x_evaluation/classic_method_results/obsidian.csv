@@ -1,0 +1,6 @@
+Component,VulnID,CVSS_Base,EPSS_Prob,Classic_Score,Priority
+System.Private.Uri,CVE-2019-0657,9.4,0.0480,0.494,Medium
+Microsoft.NETCore.App,CVE-2017-11770,8.6,0.0990,0.479,Medium
+System.Net.Http,CVE-2018-8292,8.7,0.0630,0.466,Medium
+System.Text.RegularExpressions,CVE-2019-0820,8.6,0.0322,0.446,Medium
+Newtonsoft.Json,CVE-2024-21907,8.6,0.0227,0.441,Medium

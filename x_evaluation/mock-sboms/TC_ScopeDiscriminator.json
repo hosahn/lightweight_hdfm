@@ -1,0 +1,53 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "name": "root",
+      "bom-ref": "root-app@1.0"
+    },
+    {
+      "name": "direct-lib",
+      "bom-ref": "pkg:npm/direct-lib@1.0"
+    },
+    {
+      "name": "transitive-lib",
+      "bom-ref": "pkg:npm/transitive-lib@1.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@1.0",
+      "dependsOn": [
+        "pkg:npm/direct-lib@1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/direct-lib@1.0",
+      "dependsOn": [
+        "pkg:npm/transitive-lib@1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/transitive-lib@1.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": {
+    "CVE-DIRECT": {
+      "package_id": "pkg:npm/direct-lib@1.0",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "impact_score": 7.5,
+      "epss": 0.1,
+      "vex_status": "affected",
+      "dependency_scope": "required"
+    },
+    "CVE-TRANSITIVE": {
+      "package_id": "pkg:npm/transitive-lib@1.0",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "impact_score": 7.5,
+      "epss": 0.1,
+      "vex_status": "affected",
+      "dependency_scope": "optional"
+    }
+  }
+}

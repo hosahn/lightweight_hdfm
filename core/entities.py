@@ -21,6 +21,7 @@ class Component:
     published_at: Optional[datetime] = None
     is_deprecated: bool = False
     maintenance_risk_score: float = 0.0  # 0.0  to 1.0
+    scope: str = ""
     def __hash__(self):
         return hash(self.bom_ref)
 

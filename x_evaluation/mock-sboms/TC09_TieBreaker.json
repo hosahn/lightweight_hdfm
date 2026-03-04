@@ -1,0 +1,69 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:5032b7ba-ec6c-4df7-9a53-37d7f375aae7",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-02-18T11:07:10.282589Z",
+    "component": {
+      "type": "application",
+      "name": "Tie-Breaker-App-Scenario-I",
+      "version": "1.0.0",
+      "bom-ref": "root-app@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "name": "root-app",
+      "bom-ref": "root-app@1.0.0",
+      "type": "application"
+    },
+    {
+      "name": "net-lib",
+      "bom-ref": "pkg:npm/net-lib@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "local-lib",
+      "bom-ref": "pkg:npm/local-lib@1.0.0",
+      "type": "library"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@1.0.0",
+      "dependsOn": [
+        "pkg:npm/net-lib@1.0.0",
+        "pkg:npm/local-lib@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/net-lib@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/local-lib@1.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": {
+    "CVE-NET": {
+      "package_id": "pkg:npm/net-lib@1.0.0",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "impact_score": 7.5,
+      "base_score": 7.5,
+      "epss": 0.1,
+      "kev": false,
+      "vex_status": "affected"
+    },
+    "CVE-LOCAL": {
+      "package_id": "pkg:npm/local-lib@1.0.0",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "impact_score": 7.5,
+      "base_score": 7.5,
+      "epss": 0.1,
+      "kev": false,
+      "vex_status": "affected"
+    }
+  }
+}

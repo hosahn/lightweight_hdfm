@@ -1,0 +1,2331 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:b51fcc3c-c5d7-4e35-a63a-0663a1568114",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-02-18T11:07:17.371166Z",
+    "component": {
+      "type": "application",
+      "name": "Entropy-Test-App-Scenario-J",
+      "version": "1.0.0",
+      "bom-ref": "root-app@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "name": "root-app",
+      "bom-ref": "root-app@1.0.0",
+      "type": "application"
+    },
+    {
+      "name": "comp-0",
+      "bom-ref": "pkg:npm/comp-0@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-1",
+      "bom-ref": "pkg:npm/comp-1@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-2",
+      "bom-ref": "pkg:npm/comp-2@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-3",
+      "bom-ref": "pkg:npm/comp-3@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-4",
+      "bom-ref": "pkg:npm/comp-4@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-5",
+      "bom-ref": "pkg:npm/comp-5@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-6",
+      "bom-ref": "pkg:npm/comp-6@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-7",
+      "bom-ref": "pkg:npm/comp-7@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-8",
+      "bom-ref": "pkg:npm/comp-8@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-9",
+      "bom-ref": "pkg:npm/comp-9@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-10",
+      "bom-ref": "pkg:npm/comp-10@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-11",
+      "bom-ref": "pkg:npm/comp-11@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-12",
+      "bom-ref": "pkg:npm/comp-12@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-13",
+      "bom-ref": "pkg:npm/comp-13@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-14",
+      "bom-ref": "pkg:npm/comp-14@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-15",
+      "bom-ref": "pkg:npm/comp-15@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-16",
+      "bom-ref": "pkg:npm/comp-16@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-17",
+      "bom-ref": "pkg:npm/comp-17@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-18",
+      "bom-ref": "pkg:npm/comp-18@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-19",
+      "bom-ref": "pkg:npm/comp-19@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-20",
+      "bom-ref": "pkg:npm/comp-20@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-21",
+      "bom-ref": "pkg:npm/comp-21@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-22",
+      "bom-ref": "pkg:npm/comp-22@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-23",
+      "bom-ref": "pkg:npm/comp-23@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-24",
+      "bom-ref": "pkg:npm/comp-24@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-25",
+      "bom-ref": "pkg:npm/comp-25@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-26",
+      "bom-ref": "pkg:npm/comp-26@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-27",
+      "bom-ref": "pkg:npm/comp-27@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-28",
+      "bom-ref": "pkg:npm/comp-28@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-29",
+      "bom-ref": "pkg:npm/comp-29@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-30",
+      "bom-ref": "pkg:npm/comp-30@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-31",
+      "bom-ref": "pkg:npm/comp-31@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-32",
+      "bom-ref": "pkg:npm/comp-32@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-33",
+      "bom-ref": "pkg:npm/comp-33@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-34",
+      "bom-ref": "pkg:npm/comp-34@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-35",
+      "bom-ref": "pkg:npm/comp-35@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-36",
+      "bom-ref": "pkg:npm/comp-36@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-37",
+      "bom-ref": "pkg:npm/comp-37@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-38",
+      "bom-ref": "pkg:npm/comp-38@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-39",
+      "bom-ref": "pkg:npm/comp-39@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-40",
+      "bom-ref": "pkg:npm/comp-40@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-41",
+      "bom-ref": "pkg:npm/comp-41@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-42",
+      "bom-ref": "pkg:npm/comp-42@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-43",
+      "bom-ref": "pkg:npm/comp-43@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-44",
+      "bom-ref": "pkg:npm/comp-44@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-45",
+      "bom-ref": "pkg:npm/comp-45@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-46",
+      "bom-ref": "pkg:npm/comp-46@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-47",
+      "bom-ref": "pkg:npm/comp-47@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-48",
+      "bom-ref": "pkg:npm/comp-48@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "comp-49",
+      "bom-ref": "pkg:npm/comp-49@1.0.0",
+      "type": "library"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@1.0.0",
+      "dependsOn": [
+        "pkg:npm/comp-0@1.0.0",
+        "pkg:npm/comp-1@1.0.0",
+        "pkg:npm/comp-2@1.0.0",
+        "pkg:npm/comp-3@1.0.0",
+        "pkg:npm/comp-4@1.0.0",
+        "pkg:npm/comp-5@1.0.0",
+        "pkg:npm/comp-6@1.0.0",
+        "pkg:npm/comp-7@1.0.0",
+        "pkg:npm/comp-8@1.0.0",
+        "pkg:npm/comp-9@1.0.0",
+        "pkg:npm/comp-10@1.0.0",
+        "pkg:npm/comp-11@1.0.0",
+        "pkg:npm/comp-12@1.0.0",
+        "pkg:npm/comp-13@1.0.0",
+        "pkg:npm/comp-14@1.0.0",
+        "pkg:npm/comp-15@1.0.0",
+        "pkg:npm/comp-16@1.0.0",
+        "pkg:npm/comp-17@1.0.0",
+        "pkg:npm/comp-18@1.0.0",
+        "pkg:npm/comp-19@1.0.0",
+        "pkg:npm/comp-20@1.0.0",
+        "pkg:npm/comp-21@1.0.0",
+        "pkg:npm/comp-22@1.0.0",
+        "pkg:npm/comp-23@1.0.0",
+        "pkg:npm/comp-24@1.0.0",
+        "pkg:npm/comp-25@1.0.0",
+        "pkg:npm/comp-26@1.0.0",
+        "pkg:npm/comp-27@1.0.0",
+        "pkg:npm/comp-28@1.0.0",
+        "pkg:npm/comp-29@1.0.0",
+        "pkg:npm/comp-30@1.0.0",
+        "pkg:npm/comp-31@1.0.0",
+        "pkg:npm/comp-32@1.0.0",
+        "pkg:npm/comp-33@1.0.0",
+        "pkg:npm/comp-34@1.0.0",
+        "pkg:npm/comp-35@1.0.0",
+        "pkg:npm/comp-36@1.0.0",
+        "pkg:npm/comp-37@1.0.0",
+        "pkg:npm/comp-38@1.0.0",
+        "pkg:npm/comp-39@1.0.0",
+        "pkg:npm/comp-40@1.0.0",
+        "pkg:npm/comp-41@1.0.0",
+        "pkg:npm/comp-42@1.0.0",
+        "pkg:npm/comp-43@1.0.0",
+        "pkg:npm/comp-44@1.0.0",
+        "pkg:npm/comp-45@1.0.0",
+        "pkg:npm/comp-46@1.0.0",
+        "pkg:npm/comp-47@1.0.0",
+        "pkg:npm/comp-48@1.0.0",
+        "pkg:npm/comp-49@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/comp-0@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-1@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-2@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-3@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-4@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-5@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-6@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-7@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-8@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-9@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-10@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-11@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-12@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-13@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-14@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-15@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-16@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-17@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-18@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-19@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-20@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-21@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-22@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-23@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-24@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-25@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-26@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-27@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-28@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-29@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-30@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-31@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-32@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-33@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-34@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-35@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-36@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-37@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-38@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-39@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-40@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-41@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-42@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-43@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-44@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-45@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-46@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-47@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-48@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/comp-49@1.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2023-NOISE-0",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-0@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-1",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-1@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-2",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-2@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-3",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-3@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-4",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-4@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-5",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-5@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-6",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-6@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-7",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-7@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-8",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-8@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-9",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-9@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-10",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-10@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-11",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-11@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-12",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-12@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-13",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-13@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-14",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-14@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-15",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-15@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-16",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-16@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-17",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-17@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-18",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-18@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-19",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-19@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-20",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-20@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-21",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-21@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-22",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-22@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-23",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-23@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-24",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-24@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-THE-ONE",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "The actual threat hidden in noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-25@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.95"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-26",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-26@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-27",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-27@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-28",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-28@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-29",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-29@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-30",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-30@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-31",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-31@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-32",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-32@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-33",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-33@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-34",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-34@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-35",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-35@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-36",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-36@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-37",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-37@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-38",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-38@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-39",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-39@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-40",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-40@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-41",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-41@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-42",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-42@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-43",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-43@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-44",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-44@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-45",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-45@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-46",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-46@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-47",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-47@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-48",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-48@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-2023-NOISE-49",
+      "source": {
+        "name": "TEST"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 8.0,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description": "High severity noise",
+      "affects": [
+        {
+          "ref": "pkg:npm/comp-49@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.01"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    }
+  ]
+}

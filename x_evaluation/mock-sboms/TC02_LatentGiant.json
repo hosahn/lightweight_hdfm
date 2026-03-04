@@ -1,0 +1,231 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "components": [
+    {
+      "name": "root-app",
+      "bom-ref": "root-app@1.0.0",
+      "type": "application"
+    },
+    {
+      "name": "middleware",
+      "bom-ref": "pkg:npm/middleware@2.0.0",
+      "type": "library"
+    },
+    {
+      "name": "core-parser",
+      "bom-ref": "pkg:npm/core-parser@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-0",
+      "bom-ref": "pkg:npm/plugin-0@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-1",
+      "bom-ref": "pkg:npm/plugin-1@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-2",
+      "bom-ref": "pkg:npm/plugin-2@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-3",
+      "bom-ref": "pkg:npm/plugin-3@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-4",
+      "bom-ref": "pkg:npm/plugin-4@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-5",
+      "bom-ref": "pkg:npm/plugin-5@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-6",
+      "bom-ref": "pkg:npm/plugin-6@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-7",
+      "bom-ref": "pkg:npm/plugin-7@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-8",
+      "bom-ref": "pkg:npm/plugin-8@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-9",
+      "bom-ref": "pkg:npm/plugin-9@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-10",
+      "bom-ref": "pkg:npm/plugin-10@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-11",
+      "bom-ref": "pkg:npm/plugin-11@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-12",
+      "bom-ref": "pkg:npm/plugin-12@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-13",
+      "bom-ref": "pkg:npm/plugin-13@1.0",
+      "type": "library"
+    },
+    {
+      "name": "plugin-14",
+      "bom-ref": "pkg:npm/plugin-14@1.0",
+      "type": "library"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@1.0.0",
+      "dependsOn": [
+        "pkg:npm/middleware@2.0.0",
+        "pkg:npm/plugin-0@1.0",
+        "pkg:npm/plugin-1@1.0",
+        "pkg:npm/plugin-2@1.0",
+        "pkg:npm/plugin-3@1.0",
+        "pkg:npm/plugin-4@1.0",
+        "pkg:npm/plugin-5@1.0",
+        "pkg:npm/plugin-6@1.0",
+        "pkg:npm/plugin-7@1.0",
+        "pkg:npm/plugin-8@1.0",
+        "pkg:npm/plugin-9@1.0",
+        "pkg:npm/plugin-10@1.0",
+        "pkg:npm/plugin-11@1.0",
+        "pkg:npm/plugin-12@1.0",
+        "pkg:npm/plugin-13@1.0",
+        "pkg:npm/plugin-14@1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/middleware@2.0.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/core-parser@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/plugin-0@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-1@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-2@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-3@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-4@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-5@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-6@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-7@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-8@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-9@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-10@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-11@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-12@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-13@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/plugin-14@1.0",
+      "dependsOn": [
+        "pkg:npm/core-parser@1.0.0"
+      ]
+    }
+  ],
+  "vulnerabilities": [
+    {    
+      "id" : "CVE-2023-LATENT",
+      "package_id": "pkg:npm/core-parser@1.0.0",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+      "score": 4.1,
+      "epss": 0.001,
+      "kev": false,
+      "vex_status": "affected",
+      "dependency_scope": "optional"
+    }
+  ]
+}

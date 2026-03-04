@@ -1,0 +1,17 @@
+Component,VulnID,CVSS_Base,EPSS_Prob,Classic_Score,Priority
+commons-beanutils,CVE-2025-48734,10.0,0.0008,0.500,Medium
+guava,CVE-2018-10237,9.3,0.0326,0.481,Medium
+commons-vfs2,CVE-2025-27553,8.7,0.0036,0.437,Medium
+commons-net,CVE-2021-37533,8.7,0.0019,0.436,Medium
+netty-handler,CVE-2023-34462,8.6,0.0100,0.435,Medium
+commons-io,CVE-2024-47554,8.6,0.0018,0.431,Medium
+protobuf-java,CVE-2022-3509,8.6,0.0013,0.431,Medium
+commons-configuration2,CVE-2024-29133,8.0,0.0068,0.403,Medium
+commons-lang3,CVE-2025-48924,8.0,0.0002,0.400,Medium
+commons-lang,CVE-2025-48924,8.0,0.0002,0.400,Medium
+commons-lang3,CVE-2025-48924,8.0,0.0002,0.400,Medium
+jackson-core,CVE-2025-52999,7.5,0.0003,0.375,Low
+commons-compress,CVE-2024-25710,5.3,0.0002,0.265,Low
+log4j-core,CVE-2025-68161,5.0,0.0028,0.251,Low
+netty-codec,CVE-2025-58057,5.0,0.0006,0.250,Low
+netty-common,CVE-2024-47535,4.6,0.0020,0.231,Low

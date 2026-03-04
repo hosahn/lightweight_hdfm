@@ -1,0 +1,2 @@
+Component,VulnID,CVSS_Base,EPSS_Prob,Classic_Score,Priority
+usb-driver,CVE-2023-PAPER-TIGER,7.6,0.0100,0.385,Low

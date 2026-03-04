@@ -1,0 +1,128 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:cc99cde6-0a96-475c-9b4a-9c734b72110d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-28T10:40:28.251364Z",
+    "component": {
+      "type": "application",
+      "name": "Scope-Discriminator-App",
+      "version": "1.0.0",
+      "bom-ref": "root-app@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "name": "root",
+      "bom-ref": "root-app@1.0.0",
+      "type": "application"
+    },
+    {
+      "name": "direct-lib",
+      "bom-ref": "pkg:npm/direct-lib@1.0.0",
+      "type": "library",
+      "scope": "required"
+    },
+    {
+      "name": "transitive-lib",
+      "bom-ref": "pkg:npm/transitive-lib@1.0.0",
+      "type": "library",
+      "scope": "optional"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@1.0.0",
+      "dependsOn": [
+        "pkg:npm/direct-lib@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/direct-lib@1.0.0",
+      "dependsOn": [
+        "pkg:npm/transitive-lib@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/transitive-lib@1.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-DIRECT",
+      "source": {
+        "name": "TEST",
+        "url": "http://localhost"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "description": "Direct Dependency Vulnerability (Should score higher)",
+      "affects": [
+        {
+          "ref": "pkg:npm/direct-lib@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.1"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    },
+    {
+      "id": "CVE-TRANSITIVE",
+      "source": {
+        "name": "TEST",
+        "url": "http://localhost"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "TEST"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "description": "Transitive Dependency Vulnerability (Should score lower)",
+      "affects": [
+        {
+          "ref": "pkg:npm/transitive-lib@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.1"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    }
+  ]
+}

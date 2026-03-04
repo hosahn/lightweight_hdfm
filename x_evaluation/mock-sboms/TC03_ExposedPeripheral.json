@@ -1,0 +1,50 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "components": [
+    {
+      "name": "root",
+      "bom-ref": "root-app@1.0",
+      "type": "application"
+    },
+    {
+      "name": "requests",
+      "bom-ref": "pkg:pypi/requests@2.0",
+      "type": "library"
+    },
+    {
+      "name": "idna",
+      "bom-ref": "pkg:pypi/idna@3.0",
+      "type": "library"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@1.0",
+      "dependsOn": [
+        "pkg:pypi/requests@2.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/requests@2.0",
+      "dependsOn": [
+        "pkg:pypi/idna@3.0"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/idna@3.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": {
+    "CVE-2023-EXPOSED": {
+      "package_id": "pkg:pypi/idna@3.0",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "impact_score": 6.5,
+      "epss": 0.85,
+      "kev": false,
+      "vex_status": "affected",
+      "dependency_scope": "optional"
+    }
+  }
+}

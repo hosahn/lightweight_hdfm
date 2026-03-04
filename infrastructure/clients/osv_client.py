@@ -58,7 +58,7 @@ class OSVVulnerabilityLookup(IVulnerabilityLookup):
                 query = {"package": {"purl": purl}}
                 queries.append(query)
                 component_map[len(queries) - 1] = comp
-        
+            print(purl)
         if not queries:
             return {}
         

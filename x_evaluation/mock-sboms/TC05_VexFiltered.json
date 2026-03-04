@@ -1,0 +1,167 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:f43736d4-639b-46d8-ab4d-e089511ace17",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-26T07:31:15.592644Z",
+    "component": {
+      "type": "application",
+      "name": "Production-App-Scenario-E",
+      "version": "1.0.0",
+      "bom-ref": "root-app"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "golang/crypto",
+      "version": "1.0.0",
+      "bom-ref": "pkg:golang/crypto@1.0.0",
+      "purl": "pkg:golang/crypto@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "golang/github.com/gin-gonic/gin",
+      "version": "1.9.1",
+      "bom-ref": "pkg:golang/github.com/gin-gonic/gin@1.9.1",
+      "purl": "pkg:golang/github.com/gin-gonic/gin@1.9.1"
+    },
+    {
+      "type": "library",
+      "name": "golang/github.com/sirupsen/logrus",
+      "version": "1.9.3",
+      "bom-ref": "pkg:golang/github.com/sirupsen/logrus@1.9.3",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@1.9.3"
+    },
+    {
+      "type": "library",
+      "name": "golang/github.com/spf13/viper",
+      "version": "1.16.0",
+      "bom-ref": "pkg:golang/github.com/spf13/viper@1.16.0",
+      "purl": "pkg:golang/github.com/spf13/viper@1.16.0"
+    },
+    {
+      "type": "library",
+      "name": "golang/github.com/stretchr/testify",
+      "version": "1.8.4",
+      "bom-ref": "pkg:golang/github.com/stretchr/testify@1.8.4",
+      "purl": "pkg:golang/github.com/stretchr/testify@1.8.4"
+    },
+    {
+      "type": "library",
+      "name": "golang/golang.org/x/net",
+      "version": "0.17.0",
+      "bom-ref": "pkg:golang/golang.org/x/net@0.17.0",
+      "purl": "pkg:golang/golang.org/x/net@0.17.0"
+    },
+    {
+      "type": "library",
+      "name": "golang/golang.org/x/sys",
+      "version": "0.13.0",
+      "bom-ref": "pkg:golang/golang.org/x/sys@0.13.0",
+      "purl": "pkg:golang/golang.org/x/sys@0.13.0"
+    },
+    {
+      "type": "library",
+      "name": "golang/golang.org/x/text",
+      "version": "0.13.0",
+      "bom-ref": "pkg:golang/golang.org/x/text@0.13.0",
+      "purl": "pkg:golang/golang.org/x/text@0.13.0"
+    },
+    {
+      "type": "library",
+      "name": "golang/gopkg.in/yaml.v3",
+      "version": "3.0.1",
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@3.0.1"
+    },
+    {
+      "type": "library",
+      "name": "golang/github.com/google/uuid",
+      "version": "1.3.1",
+      "bom-ref": "pkg:golang/github.com/google/uuid@1.3.1",
+      "purl": "pkg:golang/github.com/google/uuid@1.3.1"
+    },
+    {
+      "type": "library",
+      "name": "golang/github.com/pkg/errors",
+      "version": "0.9.1",
+      "bom-ref": "pkg:golang/github.com/pkg/errors@0.9.1",
+      "purl": "pkg:golang/github.com/pkg/errors@0.9.1"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app",
+      "dependsOn": [
+        "pkg:golang/crypto@1.0.0",
+        "pkg:golang/github.com/gin-gonic/gin@1.9.1",
+        "pkg:golang/github.com/sirupsen/logrus@1.9.3",
+        "pkg:golang/github.com/spf13/viper@1.16.0",
+        "pkg:golang/github.com/stretchr/testify@1.8.4",
+        "pkg:golang/golang.org/x/net@0.17.0",
+        "pkg:golang/golang.org/x/sys@0.13.0",
+        "pkg:golang/golang.org/x/text@0.13.0",
+        "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+        "pkg:golang/github.com/google/uuid@1.3.1",
+        "pkg:golang/github.com/pkg/errors@0.9.1"
+      ]
+    },
+    {
+      "ref": "pkg:golang/crypto@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/gin-gonic/gin@1.9.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/sirupsen/logrus@1.9.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/spf13/viper@1.16.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/stretchr/testify@1.8.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/net@0.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/sys@0.13.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/text@0.13.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/google/uuid@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/pkg/errors@0.9.1",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": {
+    "CVE-2023-FALSE-ALARM": {
+      "package_id": "pkg:golang/crypto@1.0.0",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "base_score": 10.0,
+      "epss": 0.99,
+      "kev": true,
+      "vex_status": "not_affected",
+      "status_justification": "vulnerable_code_not_in_execute_path"
+    }
+  }
+}

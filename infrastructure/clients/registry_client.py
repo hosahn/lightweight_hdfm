@@ -34,11 +34,7 @@ class DepsDevClient(IMetadataProvider):
                 
                 if response.status_code == 200:
                     data = response.json()
-<<<<<<< HEAD
-
-=======
                     
->>>>>>> 9297f555d8d67c17f92f5c9ddc669521d66e8d21
                     # 1. Published Date
                     published_str = data.get('publishedAt')
                     published_at = None

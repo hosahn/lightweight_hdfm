@@ -125,7 +125,6 @@ class PrioritizationService:
                     #    "Critical" implies a score of at least 7.0 (adjustable to your preference).
                     tau_crit = max(p90, 7.0) 
                     tau_high = max(p70, 4.0)
-                print(all_vulns)
                 # Assign Priorities based on Distribution
                 for vuln in all_vulns:
                     # 3. Explicitly handle healthy items first

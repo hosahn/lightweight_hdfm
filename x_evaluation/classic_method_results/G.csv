@@ -1,0 +1,2 @@
+Component,VulnID,CVSS_Base,EPSS_Prob,Classic_Score,Priority
+common-utils,CVE-2023-BOTTLENECK,6.0,0.0500,0.325,Low

@@ -1,0 +1,318 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:067660b2-0d86-474c-bcb9-7098faacc2c3",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-01-28T11:06:58.196274Z",
+    "component": {
+      "type": "application",
+      "name": "Legacy-Monolith-Scenario-H",
+      "version": "5.0.0",
+      "bom-ref": "root-app@5.0.0"
+    }
+  },
+  "components": [
+    {
+      "name": "root-app",
+      "bom-ref": "root-app@5.0.0",
+      "type": "application"
+    },
+    {
+      "name": "common-utils",
+      "bom-ref": "pkg:npm/common-utils@1.0.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-0",
+      "bom-ref": "pkg:npm/feature-module-0@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-1",
+      "bom-ref": "pkg:npm/feature-module-1@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-2",
+      "bom-ref": "pkg:npm/feature-module-2@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-3",
+      "bom-ref": "pkg:npm/feature-module-3@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-4",
+      "bom-ref": "pkg:npm/feature-module-4@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-5",
+      "bom-ref": "pkg:npm/feature-module-5@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-6",
+      "bom-ref": "pkg:npm/feature-module-6@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-7",
+      "bom-ref": "pkg:npm/feature-module-7@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-8",
+      "bom-ref": "pkg:npm/feature-module-8@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-9",
+      "bom-ref": "pkg:npm/feature-module-9@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-10",
+      "bom-ref": "pkg:npm/feature-module-10@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-11",
+      "bom-ref": "pkg:npm/feature-module-11@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-12",
+      "bom-ref": "pkg:npm/feature-module-12@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-13",
+      "bom-ref": "pkg:npm/feature-module-13@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-14",
+      "bom-ref": "pkg:npm/feature-module-14@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-15",
+      "bom-ref": "pkg:npm/feature-module-15@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-16",
+      "bom-ref": "pkg:npm/feature-module-16@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-17",
+      "bom-ref": "pkg:npm/feature-module-17@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-18",
+      "bom-ref": "pkg:npm/feature-module-18@2.1.0",
+      "type": "library"
+    },
+    {
+      "name": "feature-module-19",
+      "bom-ref": "pkg:npm/feature-module-19@2.1.0",
+      "type": "library"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-app@5.0.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0",
+        "pkg:npm/feature-module-0@2.1.0",
+        "pkg:npm/feature-module-1@2.1.0",
+        "pkg:npm/feature-module-2@2.1.0",
+        "pkg:npm/feature-module-3@2.1.0",
+        "pkg:npm/feature-module-4@2.1.0",
+        "pkg:npm/feature-module-5@2.1.0",
+        "pkg:npm/feature-module-6@2.1.0",
+        "pkg:npm/feature-module-7@2.1.0",
+        "pkg:npm/feature-module-8@2.1.0",
+        "pkg:npm/feature-module-9@2.1.0",
+        "pkg:npm/feature-module-10@2.1.0",
+        "pkg:npm/feature-module-11@2.1.0",
+        "pkg:npm/feature-module-12@2.1.0",
+        "pkg:npm/feature-module-13@2.1.0",
+        "pkg:npm/feature-module-14@2.1.0",
+        "pkg:npm/feature-module-15@2.1.0",
+        "pkg:npm/feature-module-16@2.1.0",
+        "pkg:npm/feature-module-17@2.1.0",
+        "pkg:npm/feature-module-18@2.1.0",
+        "pkg:npm/feature-module-19@2.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/common-utils@1.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/feature-module-0@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-1@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-2@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-3@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-4@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-5@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-6@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-7@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-8@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-9@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-10@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-11@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-12@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-13@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-14@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-15@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-16@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-17@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-18@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/feature-module-19@2.1.0",
+      "dependsOn": [
+        "pkg:npm/common-utils@1.0.0"
+      ]
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2023-BOTTLENECK",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "NVD"
+          },
+          "score": 6.0,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "description": "Structural Bottleneck - Low Threat, Critical Architecture",
+      "affects": [
+        {
+          "ref": "pkg:npm/common-utils@1.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "epss",
+          "value": "0.05"
+        },
+        {
+          "name": "kev",
+          "value": "false"
+        }
+      ],
+      "analysis": {
+        "state": "affected"
+      }
+    }
+  ]
+}
