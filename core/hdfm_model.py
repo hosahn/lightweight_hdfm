@@ -80,15 +80,12 @@ class HDFMModel:
         if (vuln.cvss_score >= 9.8 and (vuln.tcs >= 0.7 and vuln.exploitability >= 0.5)):
             final_score = base_score * 1.5
             
-        # Branch A+: CVSS Critical & High Network Exposure
         elif (vuln.cvss_score >= 9.0) and (vuln.vei >= 0.85) and vuln.tcs >= 0.5:
             final_score = base_score * 1.2
 
-        # Branch B: Significant Exposure
         elif vuln.vei >= 0.8 and vuln.tcs >= 0.4:
             final_score = base_score * 1.0
 
-        # Branch C: Latent / Local Risk
         else:
             final_score = base_score * 0.5
         return final_score
