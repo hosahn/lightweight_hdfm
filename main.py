@@ -36,7 +36,7 @@ def create_app() -> FastAPI:
     threat_intel = ThreatIntelClient()
     vuln_lookup = OSVVulnerabilityLookup()
     metadata_provider = DepsDevClient()
-    app = FastAPI(title="HDFM v4.0 SBOM Analyzer")
+    app = FastAPI(title="HDFM SBOM Analyzer")
     
     app.add_middleware(
         CORSMiddleware,
@@ -53,7 +53,7 @@ def create_app() -> FastAPI:
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HDFM v4.0 - SQLite + OSV.dev</title>
+    <title>HDFM - SQLite + OSV.dev + EPSS + KEV + DEPS.dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-white p-8">
@@ -469,7 +469,7 @@ def create_app() -> FastAPI:
 if __name__ == "__main__":
     import uvicorn
     app = create_app()
-    print("1. Starting HDFM v4.0 SBOM Analyzer...")
+    print("1. Starting HDFM SBOM Analyzer...")
     print("2. SQLite database: hdfm_sbom.db")
     print("3. OSV.dev integration enabled")
     print("4. Open http://localhost:8000")
