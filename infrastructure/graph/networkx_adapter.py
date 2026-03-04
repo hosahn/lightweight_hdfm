@@ -24,15 +24,8 @@ class NetworkXGraphAnalyzer(IGraphAnalyzer):
         tcs_scores = {}
         
         for comp in components:
-            # --- Factor 1: Normalized Centrality (D) ---
-            # How many other components depend on this one?
             degree_count = in_degree.get(comp.bom_ref, 0)
             normalized_degree = degree_count / max_in_degree
-            
-            # --- Factor 2: Scope Priority (S) ---
-            # 'required' = Direct (1.0)
-            # 'optional' = Transitive (0.5)
-            # None/Missing = Uncertainty Penalty (0.6)
             
             scope_val = getattr(comp, 'scope', None)
             
